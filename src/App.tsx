@@ -11,8 +11,8 @@ import { GlobalStyles } from "./components/styles/Global.styles";
 function App() {
   return (
     <Router>
+      <GlobalStyles />
       <Container w="100vw" h="100vh" p="0" m="0" bgc="#3A0CA3">
-        <GlobalStyles />
         <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />
