@@ -6,13 +6,14 @@ export const MenuLink = styled(NavLink)`
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #f72585;
+  font-weight: 600;
+  color: #4895ef;
   transition: all 0.3s ease-in-out;
   font-size: 1.5rem;
 
   &:hover {
     cursor: pointer;
-    color: #4cc9f0;
+    color: #f72585;
   }
 `;
 
@@ -21,17 +22,19 @@ export const MenuBlankLink = styled.a`
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #f72585;
+  font-weight: 600;
+  color: #4895ef;
   transition: all 0.3s ease-in-out;
   font-size: 1.5rem;
 
   &:hover {
     cursor: pointer;
-    color: #4cc9f0;
+    color: #f72585;
   }
 `;
 
 export const Nav = styled.div`
+  max-width: 75%;
   padding: 0 1.5rem;
   display: flex;
   justify-content: flex-end;

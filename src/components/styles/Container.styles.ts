@@ -25,8 +25,10 @@ export const Text = styled.p<{
   color?: string;
   size?: string;
   weight?: string;
+  m?: string;
 }>`
   color: ${(props) => props.color};
   font-size: ${(props) => props.size};
   font-weight: ${(props) => props.weight};
+  margin: ${(props) => props.m};
 `;
