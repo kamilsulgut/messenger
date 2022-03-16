@@ -15,7 +15,7 @@ function App() {
       <Container w="100vw" h="100vh" p="0" m="0" bgc="#3A0CA3">
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/messenger" element={<Messenger />} />
         </Routes>
       </Container>
