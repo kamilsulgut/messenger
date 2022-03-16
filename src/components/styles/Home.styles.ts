@@ -58,7 +58,8 @@ export const Button = styled.button<{
   }
 `;
 
-export const HomeLink = styled(MenuBlankLink)`
+export const HomeLink = styled(MenuBlankLink)<{ color?: string }>`
   padding: 0;
   margin: 0;
+  color: ${(props) => props.color};
 `;
