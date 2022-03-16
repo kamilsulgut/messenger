@@ -17,7 +17,7 @@ export const Navbar = () => {
   };
 
   return (
-    <Nav>
+    <Nav isOpen={isOpen}>
       {/* <Logo href="">
         Eli<span>Codes</span>
       </Logo> */}

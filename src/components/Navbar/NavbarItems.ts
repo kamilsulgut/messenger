@@ -7,7 +7,7 @@ interface NavbarItemsInterface {
 const navbarItems: NavbarItemsInterface[] = [
   {
     title: "home",
-    link: "/home",
+    link: "/",
     id: 1,
   },
   {

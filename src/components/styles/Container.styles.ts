@@ -9,9 +9,10 @@ export const Container = styled.div<{
   m?: string;
   bgc?: string;
 }>`
-  height: ${(props) => props.h};
+  min-height: ${(props) => props.h};
   width: ${(props) => props.w};
   max-width: 100%;
+  max-height: 100%;
   padding: ${(props) => props.p};
   margin: ${(props) => props.m};
   background-color: ${(props) => props.bgc};

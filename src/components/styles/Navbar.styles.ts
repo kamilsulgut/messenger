@@ -33,7 +33,7 @@ export const MenuBlankLink = styled.a`
   }
 `;
 
-export const Nav = styled.div`
+export const Nav = styled.div<{ isOpen: boolean }>`
   max-width: 75%;
   padding: 0 1.5rem;
   display: flex;
@@ -44,6 +44,16 @@ export const Nav = styled.div`
   top: 10px;
   left: 0;
   right: 0;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    height: 30%;
+    box-shadow: ${({ isOpen }) =>
+      isOpen ? "inset 768px 350px 768px #000000d1" : "none"};
+  }
 `;
 
 export const Logo = styled.a<{ href?: string }>`
@@ -64,15 +74,20 @@ export const Menu = styled.div<{ isOpen: boolean }>`
   align-items: center;
   position: relative;
   @media (max-width: 768px) {
+    position: relative;
+    top: -10px;
     overflow: hidden;
     flex-direction: column;
-    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    max-height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
     transition: max-height 0.2s ease-in-out;
     width: 100%;
   }
 `;
 
 export const Hamburger = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 15px;
   display: none;
   flex-direction: column;
   cursor: pointer;
